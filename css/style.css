@@ -13,8 +13,9 @@ header {
 }
 
 /* Set the headings */
-h1 {
+h1, h2, h3, h4 {
     font-family: "Sigmar", sans-serif;
+    text-align: center;
 }
 
 img {
@@ -40,4 +41,25 @@ img {
 /* Bibliographic Info */
 #bio {
     text-align: center;
+}
+
+#hobbies {
+    text-align: center;
+}
+
+#hobbies h2 {
+    font-style: italic;
+}
+
+#hobbies ul {
+    list-style-type: none;
+}
+
+#hobbies ul li:nth-child(even) {
+    color: #fff;
+}
+
+#hobbies ul li:last-child {
+    font-style: italic;
+    font-weight: bold;
 }
