@@ -38,11 +38,12 @@ img {
     
 }
 
-/* Bibliographic Info */
+/* Bio Section */
 #bio {
     text-align: center;
 }
 
+/* Hobbies Section */
 #hobbies {
     text-align: center;
 }
@@ -63,3 +64,29 @@ img {
     font-style: italic;
     font-weight: bold;
 }
+
+/* Gallery */
+
+#gallery { /*attributes derived from hero section*/
+    text-align: center;
+    background-color: #007CBA;
+    padding: 20px;
+    border: 10px solid #5c9fbf;
+    border-radius: 40px;
+    color: #fff;
+    margin: 20px;
+}
+
+#gallery img {
+    max-width: 100%;
+}
+
+#gallery figure {
+    text-align: center;
+    font-style: italic;
+}
+
+#gallery hr {
+    color: #fff
+}
+
