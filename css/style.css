@@ -30,6 +30,7 @@ img {
     border: 10px solid #5c9fbf;
     border-radius: 40px;
     color: #fff;
+    margin: 20px;
 }
 
 #hero img {
@@ -90,3 +91,26 @@ img {
     color: #fff
 }
 
+/* ARTICLE */
+
+#lit { /*theme attributes*/
+    background-color: #007CBA;
+    padding: 20px;
+    border: 10px solid #5c9fbf;
+    border-radius: 40px;
+    color: #fff;
+    margin: 20px;
+}
+
+#lit div p:first-child::first-letter { /* Only done to FIRST letter of FIRST paragraph*/
+    color: #000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: #dbdbdb 1px 5px;
+    background-color: #fff;
+    float: left;
+    font-size: 3em;
+    padding: .25em;
+    margin-right: .25em;
+    border: 3px outset goldenrod;
+    box-shadow: 2px 2px 5px;
+}
