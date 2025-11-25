@@ -8,18 +8,18 @@ body {
 }
 
 /* The header styling */
-header {
+/* header {
     text-align: center;
-}
+} */
 
 /* Set the headings */
 h1, h2, h3, h4 {
-    font-family: "Sigmar", sans-serif;
+    /* font-family: "Sigmar", sans-serif; */
     text-align: center;
 }
 
 img {
-    max-width: 500px;
+    max-width: 100%;
 }
 
 /* Hero section */
@@ -27,10 +27,10 @@ img {
     text-align: center;
     background-color: #007CBA;
     padding: 20px;
+    margin: 20px;
     border: 10px solid #5c9fbf;
     border-radius: 40px;
     color: #fff;
-    margin: 20px;
 }
 
 #hero img {
@@ -68,18 +68,40 @@ img {
 
 /* Gallery */
 
-#gallery { /*attributes derived from hero section*/
-    text-align: center;
-    background-color: #007CBA;
+#gallery {
     padding: 20px;
+    margin: 20px;
     border: 10px solid #5c9fbf;
     border-radius: 40px;
     color: #fff;
-    margin: 20px;
+    background-color: #007CBA;
+
+    /* ADD THESE TO PROPERLY CENTER IMAGES */
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   /* centers left-right */
+    /* align-items: center;       /* centers top-bottom */
+    /* flex-direction: column; */
+    /* gap: 20px; */
 }
 
 #gallery img {
-    max-width: 100%;
+    max-width: 100%;   /* prevents huge images from stretching */
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; */
+    /* #gallery { /*attributes derived from hero section*/
+    /* text-align: center; */
+    /* background-color: #007CBA; */
+    /* padding: 20px;
+    border: 10px solid #5c9fbf;
+    border-radius: 40px;
+    color: #fff;
+    margin: 20px; */
 }
 
 #gallery figure {
