@@ -167,3 +167,9 @@ img {
     height: 100%;
     width: 100%;
 }
+
+/* CONTACT FORM */
+
+#formElements {
+    display: grid;
+}

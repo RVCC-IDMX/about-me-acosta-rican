@@ -20,7 +20,7 @@
         <nav class="navbar">
             <div class="logo">
                 <img src="img/logo-bob.svg" class="log-img" alt="Image of blue origami logo.">
-                <h2>Franco Acosta's about me</h2>
+                <h2>Franco Acosta</h2>
             </div>
             <div class="navbar-links">
                 <ul>
@@ -122,8 +122,9 @@
 
         <section id="video">
             <h2>Midterm Project: Mock Company Website</h2>
-        
-            <p>Here is an embedded video from YouTube showcasing our midterm project:</p>
+            <ul>
+                <li>Here's an embedded video demonstrating the Mock Company Website Midterm Project:</li>
+            </ul>
             <p></p>
             
             <div id="videowrapper">
@@ -135,6 +136,67 @@
             
             <p>The assignment was to make a mock company website with products and reviews.</p>
             <p></p>
+        </section>
+z
+        <!-- Form Section -->
+
+        <section id="contact">
+            <h2>Contact us!</h2>
+
+            <form id="contactForm" name="contact" method="post" data-netlify="true">
+                <fieldset>
+                    <legend>Contact Us</legend>
+
+                    <div id="formElements">
+                        <!--Name required-->
+                        <label for="name">Name (required)</label>
+                        <input type="text" id="name" name="name" required>
+                        
+                        <!--Email required-->
+                        <label for="email">Email (required)</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <!--Phone (optional)-->
+                        <label for="phone">Phone Number (optional)</label>
+                        <input type="tel" id="phone" name="phone">
+                        
+                        <!--Phone Type (optional)-->
+                        <label for="phoneType">Phone Type (optional)</label>
+                        <select id="phoneType">
+                            <option value="" selected>--Select Phone Type--</option>
+                            <option value="mobile">Mobile</option>
+                            <option value="work">Work</option>
+                            <option value="other">Other</option>
+                        </select>
+
+                        <!--Message/Textbox (optional)-->
+                        <label for="message">Message (optional):</label>
+                        <textarea id="message" name="message" rows="8" placeholder="Type your message here..."></textarea>
+
+                        <!-- Reply (required)-->
+                         <fieldset>
+                            <legend>Would you like a reply?</legend>
+                            <ul>
+                                <li>
+                                    <input type="radio" id="yReply" name="reply" value="yes">
+                                    <label for="yReply">Yes, a reply would be nice.</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="nReply" name="reply" value="no" checked>
+                                    <label for="nReply">No, thank you.</label>
+                                </li>
+                            </ul>
+                         </fieldset>
+
+                         <!--Submit-->
+                         <button type="submit">Send</button>
+
+                    </div>
+
+
+                </fieldset>
+            </form>
+
         </section>
 
     </main>
