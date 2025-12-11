@@ -91,7 +91,7 @@ min-width set to width of nav elements
 such that no text wraps 
 */
 
-@media (min-width: 800px) {
+@media (min-width: 1024px) {
 
     
     .navbar {
