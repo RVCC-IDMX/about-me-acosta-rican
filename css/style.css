@@ -41,6 +41,10 @@ img {
     filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.5));
 }
 
+#hero p:last-child {
+    font-style: italic;
+}
+
 /* Bio Section */
 #bio {
     text-align: center;
@@ -113,15 +117,37 @@ img {
     color: #fff;
     margin: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
 }
 
-#lit div p:first-child::first-letter { /* Only done to FIRST letter of FIRST paragraph*/
+#lit p:first-child {
+    text-align: center;
+}
+
+#lit a {
+
+    color: white;
+    text-decoration:none;
+    padding: .5ex;
+    border-radius: .5ex;
+    border-color: white;
+    background-color: #0a66c2;
+
+}
+
+#lit a:hover {
+    filter: invert(100%);
+    transition-duration: .25s;  
+}
+
+
+#lit div p:nth-child(2)::first-letter { /* Only done to FIRST letter of FIRST paragraph*/
     color: #000;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-shadow: #dbdbdb 1px 5px;
     background-color: #fff;
     float: left;
-    font-size: 3em;
+    font-size: 4em;
     padding: .25em;
     margin-right: .25em;
     border: 3px outset goldenrod;
@@ -138,6 +164,31 @@ img {
     color: #fff;
     margin: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#video h3 {
+    text-align: left;
+}
+
+#video h4 {
+    text-align: center;
+    font-weight:500;
+}
+
+#video a {
+
+    color: black;
+    text-decoration:none;
+    padding: .5ex;
+    border-radius: .5ex;
+    border-color: white;
+    background-color: goldenrod;
+
+}
+
+#video a:hover {
+    filter: invert(100%);
+    transition-duration: .25s;  
 }
 
 #videowrapper {
@@ -161,6 +212,7 @@ img {
 }
 
 /* CONTACT FORM */
+
 #contact {
     background-color: #007CBA;
     padding: 20px;
@@ -169,7 +221,24 @@ img {
     color: #fff;
     margin: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
 }
+
+/* @media (max-with: 1024px) {
+    #contact {
+        max-width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+} */
+
+#contact div {
+    text-align: center;
+}
+
 #formElements {
     display: grid;
     row-gap: .5em;
@@ -177,10 +246,6 @@ img {
 }
 
 #contactForm {
-    /*
-    display: flex;
-    justify-content: center;
-    align-items: center;*/
     max-width: 100%;
     width: 500px;
     margin-left: auto;
@@ -213,7 +278,6 @@ img {
     
 }
 
-
 #contact button:hover {
     filter: grayscale(100%);
     transition-duration: .25s;
@@ -226,19 +290,20 @@ img {
     margin: 16px;
 }
 
-@media (min-width: 1024px) {
+/*MEDIA VIEW*/
+
+@media (min-width: 1024px) { 
 
     #gallery {
         display:grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr; /*Divides the grid into 3 fractions*/
     }
     #gallery h2, #gallery h4 {
         grid-column-start: 1;
         grid-column-end: -1;
     }
-    #gallery hr {
+    #gallery hr { /*Gets rid of the horizontal rule in mobile view*/
         display:none;
     }
-
 
 }

@@ -28,7 +28,7 @@
                     <li><a href="#gallery" class="navbar-links">Photo Gallery</a></li>
                     <li><a href="#lit" class="navbar-links">Blog</a></li>
                     <li><a href="#video" class="navbar-links">Videos</a></li>
-                    <li><a href="#contact" class="navbar-links">Contact Us</a></li>
+                    <li><a href="#contact" class="navbar-links">Contact</a></li>
                 </ul>
             </div>
 
@@ -45,45 +45,44 @@
             <img src="img/side profile.png" alt="Side profile photo.">
 
             <div> <!-- Info  -->
-                <h3>Nice To Meet You!!!</h3>
-                <p>my name is Franco A.</p>
-                <p>I'm from Costa Rica & live in NJ</p>
+                <h2>Welcome to My Web Dev Project!</h2>
+                <p>Nice to meet you, my name is Franco.</p>
+                <p>I built this page to showcase my main interests and hobbies, for anyone to get an idea of who I am.</p>
+                <p>This is my About Me page.</p>
             </div>
         </section>
     
         <section id="bio">
         <!-- Hobies and what-not -->
             <div>
-                <h3>About me . . . </h3>
-                <p>I love to have hobbies!</p>
-                <p>I play a bunch of sports, but mainly enjoy volleyball and soccer</p>
-                <p>Skateboarding and DJ'ing are my favorite to do in my free time</p>
-                <p>Sushi is the one food I'd only have for the rest of my life</p>
-                <p> I currently speak 2.5 languages</p>
+                <h2>Get to know me... </h2>
+                <p>My main interests pertain programming and music.</p>
+                <p>In programming, I'd like to specialize in UI/UX design, and potentially free lancing.</p>
+                <p>In music, I often find myself enjoying it, whether it's listening to it in a festival surrounded by friends, or while learning how to produce it.</p>
+                <p>I have high hopes about these two matters becoming a big part of my life in a near future.</p>
             </div>
         </section>
         
         <!-- Little list of hobbies-->
         <section id="hobbies">
-            <h2>Some Other Hobbies...</h2>
-
+            <h2>Some of My Hobbies Include...</h2>
             <ul>
                 <li>Being Outdoors</li>
+                <li>Festivals</li>
                 <li>Photography</li>
+                <li>DJ/Music Production</li>
                 <li>Combustion Cars</li>
+                <li>Skateboarding</li>
                 <li>Traveling</li>
-                <li>. . . and programming, of course!</li>
+                <li>. . . and programming</li>
                 
             </ul>
         </section>
 
         <!-- Section of photo gallery -->
         <section id="gallery">
-
             <h2>Photo Gallery</h2>
             <h4>Here are some random photos I've taken:</h4>
-
-            <hr>
 
             <figure>
                 <img src="img/photography-640w.jpg" alt="Photography hobby picture.">
@@ -104,26 +103,21 @@
                 <figcaption>Here is a good capture of the enjoyment music brings to me.</figcaption>
             </figure>
 
-            <hr>
 
         </section>
 
         <!-- ARTICLE SECTION -->
         <article id="lit">
 
-            <h2>Get To Know Me</h2>
+            <h2>Biography</h2>
 
                 <div>
+                    <p>This is a passage taken from my <a href="https://www.linkedin.com/in/franco-acosta-2680ba22b/">LinkedIn page</a></p>
                     <p>
                         As a result of years in customer service and relation, I have developed an extensive set of skills focusing on
                         client relationships, satisfaction and retention. Additionally, communicating in multiple languages has allowed me
                         to excel with various teams and clientele from diverse backgrounds. With academic experience in computer science and
-                        front-end programming, I strive to facilitate digital solutions tailored to a wide-range consumer base.As a result
-                        of years in customer service and relation, I have developed an extensive set of skills focusing on client
-                        relationships, satisfaction and retention. Additionally, communicating in multiple languages has allowed me to excel
-                        with various teams and clientele from diverse backgrounds. With academic experience in computer science and
-                        front-end programming, I strive to facilitate digital solutions tailored to a wide-range consumer base.
-                        .</p>
+                        front-end programming, I strive to facilitate digital solutions tailored to a wide-range consumer base.</p>
                     </div>
                     
                     </article>
@@ -131,27 +125,28 @@
         <!-- EMBEDDED MEDIA SECTION -->
 
         <section id="video">
-            <h2>Midterm Project: Mock Company Website</h2>
-            <ul>
-                <li>Here's an embedded video demonstrating the Mock Company Website Midterm Project:</li>
-            </ul>
-            <p></p>
+            <h2>Embeded Media</h2>
+            <h4>I have linked two YouTube videos below for you to see:</h4>
+            <h3><a href="https://www.youtube.com/embed/BUOv8zs1aIs?si=2e-MS0JKbU1lBE01" target="iFrame1">Midterm Project</a></h3>
+            <ul><li>The assignment was to make a mock company website with products and reviews.</li></ul>
+            <h3><a href="https://www.youtube.com/embed/y5SeTfxuUGc?si=KViHz58ZDCrGgLbV" target="iFrame1">Festival Video</a></h3>
+            <ul><li>This is a short clip of what my typical festivals are like.</li></ul>
             
             <div id="videowrapper">
-                <iframe id="myVideo" src="https://www.youtube.com/embed/BUOv8zs1aIs?si=2e-MS0JKbU1lBE01"
+                <iframe id="myVideo" name="iFrame1" src="https://www.youtube.com/embed/BUOv8zs1aIs?si=2e-MS0JKbU1lBE01"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
             
-            <p>The assignment was to make a mock company website with products and reviews.</p>
-            <p></p>
+            
         </section>
 z
         <!-- Form Section -->
 
         <section id="contact">
             <h2>Contact us!</h2>
+            <div><p>Finally, feel free to fill out this form to get in contact with me:</p></div>
 
             <form id="contactForm" name="contactForm" method="post" netlify>
                 <fieldset>
@@ -180,7 +175,7 @@ z
                         </select>
 
                         <!--Message/Textbox (optional)-->
-                        <label for="message">Message (optional):</label>
+                        <label for="message">Message (optional)</label>
                         <textarea id="message" name="message" rows="8" placeholder="Type your message here..."></textarea>
 
                         <!-- Reply (required)-->
